@@ -3,6 +3,7 @@ import _ from 'lodash';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { fetchPosts } from '../actions';
+import Navbar from './navbar';
 
 class PostsIndex extends Component {
   //componentDidMount is a good place to fetch a data or any action that wants to be done only one time at
@@ -31,15 +32,18 @@ class PostsIndex extends Component {
   render() {
     return (
       <div>
+        <Navbar />
         <div className="text-xs-right">
           <Link className="btn btn-primary" to="/posts/new">
-            Add a Post
+            Add a New Post
           </Link>
         </div>
-        <h3>Posts</h3>
-        <ul className="list-group">
-          {this.renderPosts()}
-        </ul>
+        <div className="show-post-index">
+          <h3>Posts</h3>
+          <ul className="list-group">
+            {this.renderPosts()}
+          </ul>
+        </div>
       </div>
     );
   }

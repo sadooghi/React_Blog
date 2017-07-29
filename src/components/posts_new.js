@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import { Field, reduxForm } from 'redux-form';
+//this {reduxForm} alows our component to communicate with the additional reducer that we wired in (similar to connect)
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { createPost } from '../actions';
-//this {reduxForm} alows our component to communicate with the additional reducer that we wired in (similar to connect)
+import Navbar from './navbar';
+
 
 class PostsNew extends Component {
 
@@ -45,25 +47,28 @@ class PostsNew extends Component {
       // is good and ready to be submitted, calls the function we passed to handleSubmit (here: this.onSubmit)
       // here we used .bind(this) because onSubmit is a callback function and it is executed in another context
       // inside component and we want to make sure here we have  access to the right this inside onSubmit
-      <form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
-        <Field
-          lable="Title For Post"
-          name="title"
-          component={this.renderField}
-        />
-        <Field
-          lable="Categories"
-          name="categories"
-          component={this.renderField}
-        />
-        <Field
-          lable="Post Content"
-          name="content"
-          component={this.renderField}
-        />
-        <button type="submit" className="btn btn-primary">Submit</button>
-        <Link to="/" className="btn btn-danger">Cancel</Link>
-      </form>
+      <div>
+        <Navbar />
+        <form className="add-new-post-form" onSubmit={handleSubmit(this.onSubmit.bind(this))}>
+          <Field
+            lable="Title For Post"
+            name="title"
+            component={this.renderField}
+          />
+          <Field
+            lable="Categories"
+            name="categories"
+            component={this.renderField}
+          />
+          <Field
+            lable="Post Content"
+            name="content"
+            component={this.renderField}
+          />
+          <button type="submit" className="btn btn-primary">Submit</button>
+          <Link to="/" className="btn btn-danger">Cancel</Link>
+        </form>
+      </div>
     );
   }
 }

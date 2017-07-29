@@ -1,3 +1,67 @@
 form a {
   margin-left: 5px;
 }
+.navbar {
+  background: #3498db;
+  height: 50px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  border-radius: 0 !important;
+  margin-bottom: 50px;
+}
+
+.navbar-brand {
+  color: white;
+  display: block;
+  float: left;
+  font-weight: 700;
+  font-size: 28px;
+  height: 60px;
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width: 100% !important;
+}
+
+.text-xs-right {
+  margin-right: 80px !important;
+}
+
+.show-post-index {
+  margin: 0px 80px ;
+}
+
+.add-new-post-form {
+  margin: 0px 80px ;
+}
+
+.each-post-content {
+  margin: 0px 80px ;
+}
+
+.pull-xs-right {
+  margin-left: 20px;
+}
+
+.post-content {
+  margin-top: 40px;
+}
+
+.post-title{
+  color: #3498db;
+}
+
+.post-categories {
+  color: #2980b9;
+}
+
+.list-group {
+  margin-top: 40px;
+}
