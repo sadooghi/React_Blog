@@ -1,25 +1,17 @@
-# React Blog
-
-Interested in learning [Redux](https://www.udemy.com/react-redux/)?
-
-### Getting Started
-
-There are two methods for getting started with this repo.
-
-#### Familiar with Git?
-Checkout this repo, install dependencies, then start the gulp process with the following:
-
-```
-> git clone https://github.com/StephenGrider/ReduxSimpleStarter.git
-> cd ReduxSimpleStarter
-> npm install
-> npm start
-```
-
-#### Not Familiar with Git?
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
-
-```
-> npm install
-> npm start
-```
+# Project Description:
+My Blog is a simple blog which you can add a new post or delete an existing post.
+# Technical Specifications:
+## Tech-Stack:
+* React
+* Redux
+* React-Redux
+* axios
+* lodash
+* React-Router-Dom
+* React-Form
+* redux-promise
+# Project Screenshots:
+![picture alt](https://raw.github.com/brunocabral88/rent-it/master/screenshots/index_page.png "main page")
+![picture alt](https://github.com/brunocabral88/rent-it/blob/master/screenshots/add_new_post_validation.png "validation in adding new post")
+![picture alt](https://raw.github.com/brunocabral88/rent-it/master/screenshots/add_new_post.png "add a new post")
+![picture alt](https://raw.github.com/brunocabral88/rent-it/master/screenshots/show_each_post.png "show each post")
